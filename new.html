@@ -1,0 +1,189 @@
+<html>
+<head>
+    <title>Home Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .title-container {
+            background-color: black;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .title {
+            font-size: 50px;
+            color: #fff;
+            margin: 0;
+        }
+
+        .marque-container {
+            background-color: #fff;
+            padding: 10px 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        .marque h2 {
+            color: red;
+            margin: 0;
+        }
+
+        .tours-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            max-width: 1200px;
+        }
+
+        .tour-box {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin: 20px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .tour-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .tour-details {
+            margin-top: 10px;
+        }
+
+        .tour-details h3 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        .tour-details p {
+            font-size: 16px;
+            color: #666;
+            margin: 10px 0;
+        }
+
+        .tour-price {
+            font-size: 24px;
+            color: #4CAF50;
+            margin-top: 10px;
+        }
+		.submit-button {
+    background-color: #4CAF50; 
+    color: white; 
+    border: none;
+    padding: 15px 32px; 
+    text-align: center;
+    text-decoration: none; 
+    display: inline-block;
+    font-size: 16px; 
+    margin: 4px 2px; 
+    cursor: pointer; 
+    border-radius: 12px; 
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.submit-button:hover {
+    background-color: #45a049; 
+    transform: scale(1.05); 
+}
+
+    </style>
+</head>
+<body>
+    <div class="title-container">
+        <h1 class="title" id="titleText">Beauty Home</h1>
+		
+    </div>
+
+    <div class="marque-container" id="marque-container">
+        <marquee class="marque"><h2>Discover Amazing cleaning services Under Your Budgets! Get Up To 50% Off on Selected</h2></marquee>
+    </div>
+
+    <div class="tours-container">
+        <div class="tour-box">
+            <img src="C:\Users\advit\OneDrive\Desktop\1.jpg" alt="ac cleaning image" class="tour-image">
+            <div class="tour-details">
+                <h3>Ac Cleaning</h3>
+                <p>Professional maintenance to ensure optimal performance and air quality.
+</p>
+                <div class="tour-price">₹990</div>
+				<br>
+    <button class="submit-button">book now</button>
+            </div>
+        </div>
+
+        <div class="tour-box">
+            <img src="C:\Users\advit\OneDrive\Desktop\2.jpg" alt="deep cleaning image" class="tour-image">
+            <div class="tour-details">
+                <h3>Deep Cleaning</h3>
+                <p>Thorough and comprehensive cleaning to eliminate dirt and grime from every corner.
+</p>
+                <div class="tour-price">₹1500</div>
+				<br>
+    <button class="submit-button">book now</button>
+            </div>
+        </div>
+
+        <div class="tour-box">
+            <img src="C:\Users\advit\OneDrive\Desktop\3.jpg" alt="bathroom cleaning image" class="tour-image">
+            <div class="tour-details">
+                <h3>bathroom cleaning</h3>
+                <p>Deep cleansing to sanitize surfaces and fixtures for a sparkling, germ-free environment.</p>
+                <div class="tour-price">₹200</div>
+				<br>
+    <button class="submit-button">book now</button>
+            </div>
+        </div>
+
+        <div class="tour-box">
+            <img src="C:\Users\advit\OneDrive\Desktop\4.jpg" alt="sofa cleaning image" class="tour-image">
+            <div class="tour-details">
+                <h3>sofa cleaning</h3>
+                <p>Expert treatment to refresh and revitalize upholstery, removing stains and odors.
+</p>
+                <div class="tour-price">₹1200</div>
+				<br>
+    <button class="submit-button">book now</button>
+            </div>
+        </div>
+    </div>
+<h2 style="font-size:20px"> For More Details Contact <br> Call Us At : +91 xxxxx xxxxx <br>Email:xxx@gmail.com <script>
+        function changeTextColor() {
+            var title = document.getElementById("marque-container");
+            var colors = ["red", "blue", "green", "orange", "purple"];  
+            var currentColor = title.style.color; 
+            var currentIndex = colors.indexOf(currentColor);
+            if (currentIndex === -1 || currentIndex === colors.length - 1) {
+                title.style.color = colors[0];
+            } else {
+                title.style.color = colors[currentIndex + 1];
+            }
+        }
+        setInterval(changeTextColor, 1000);
+    </script>
+</body>
+</html>
